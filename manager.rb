@@ -20,4 +20,8 @@ class Manager
       puts "".center(50, "-")
     end
   end
+
+  def get_all
+    @database.get_all
+  end
 end
