@@ -7,4 +7,8 @@ class Note
     @text = text
     @date = Time.now
   end
+
+  def to_s
+    "Date: #{@date.strftime("%Y-%m-%d %H:%M:%S")} \nNote: #@text"
+  end
 end
