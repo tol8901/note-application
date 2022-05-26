@@ -1,4 +1,5 @@
 require_relative './manager'
+require_relative './note'
 
 module Application
   def self.run
@@ -27,7 +28,10 @@ module Application
     end
 
     def add
-
+      print "Note: "
+      text = gets.chomp
+      note = Note.new(text)
+      @manager.store(note)
     end
   end
 end
