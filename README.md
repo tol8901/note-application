@@ -1,2 +1,2 @@
 # note-application
-A simple Note Application. 
+It is a simple console Note Application. 
