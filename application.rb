@@ -1,3 +1,5 @@
+require_relative './manager'
+
 module Application
   def self.run
     menu = Menu.new
@@ -21,7 +23,7 @@ module Application
   #Menu class to manage inner operations
   class Menu
     def initialize
-
+      @manager = Manager.new
     end
 
     def add
